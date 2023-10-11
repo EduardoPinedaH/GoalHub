@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-    process.env.MONGODB_URI ||
-        "mongodb+srv://eduardopinedahu:<password>@cluster0.8azwtap.mongodb.net/?retryWrites=true&w=majority"
+    process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/goalhub"
 );
 
 module.exports = mongoose.connection;
